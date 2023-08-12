@@ -1,0 +1,17 @@
+@import "../themes/default";
+
+.form-control{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem 0;
+
+  padding: 1rem;
+
+  &.error{
+
+  }
+}
+
+.error-message{
+  color: $danger;
+}

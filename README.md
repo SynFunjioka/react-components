@@ -1,3 +1,7 @@
+# React components project
+This project is for testing React tools and creating reusable components.
+
+This project is useing sass so you must compile the index.scss to App.css for any changes.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

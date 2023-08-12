@@ -1,0 +1,25 @@
+@import "../themes/default";
+@import "../abstracts/mixins";
+
+.btn {
+  padding:        10px 20px;
+  font-size:      16px;
+  border-radius:  0.5rem;
+  padding:        1rem 1.5rem;
+  text-decoration:none;
+  cursor: pointer;
+
+  &.primary {
+    @include button-style($primary, white);
+  }
+
+  &.danger {
+    @include button-style($danger, white);
+  }
+
+  &.disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+  }
+}

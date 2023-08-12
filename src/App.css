@@ -1,3 +1,90 @@
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn.primary {
+  background-color: #4CAF50;
+  border: 1px solid #4CAF50;
+  color: white;
+  text-shadow: 0px 1px 0px #2d682f;
+}
+.btn.primary:not(.disabled):hover {
+  background-color: #5cb860;
+}
+.btn.primary:not(.disabled):active {
+  position: relative;
+  top: 1px;
+}
+.btn.primary.disabled {
+  background-color: #92cf94;
+}
+.btn.danger {
+  background-color: #da4545;
+  border: 1px solid #da4545;
+  color: white;
+  text-shadow: 0px 1px 0px #9a1f1f;
+}
+.btn.danger:not(.disabled):hover {
+  background-color: #de5a5a;
+}
+.btn.danger:not(.disabled):active {
+  position: relative;
+  top: 1px;
+}
+.btn.danger.disabled {
+  background-color: #eb9a9a;
+}
+.btn.disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
 
+.input {
+  padding: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #53555c;
+  border-style: solid;
+  border-radius: 9px;
+  box-shadow: 0px 0px 10px rgba(66, 66, 66, 0.28);
+  text-shadow: -50px 0px 0px rgba(66, 66, 66, 0);
+}
+.input-password {
+  display: flex;
+}
+.input-password input {
+  flex: 1 0;
+}
+.input-password__actions {
+  min-width: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-password__actions button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.css-input:focus {
+  outline: none;
+}
+
+form.submitted .form-control.error .input {
+  border-color: #da4545;
+  box-shadow: 0px 0px 10px rgba(218, 69, 69, 0.28);
+}
+form.submitted .form-control:not(.error) .input {
+  border-color: #4CAF50;
+  box-shadow: 0px 0px 10px rgba(76, 175, 80, 0.28);
+}
 
 /*# sourceMappingURL=App.css.map */
